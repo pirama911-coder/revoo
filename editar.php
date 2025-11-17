@@ -20,7 +20,7 @@ $art = $res->fetch_assoc();
 $stmt->close();
 
 if (!$art) {
-    header('Location: index.php?error=no_autorizado');
+    header('Location: inicio.php?error=no_autorizado');
     exit;
 }
 ?>

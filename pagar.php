@@ -50,7 +50,7 @@ $stmt->close();
         </div>
         <div class="logo">REVOO</div>
         <nav class="nav-links">
-            <a href="index.php">Inicio</a>
+            <a href="inicio.php">Inicio</a>
             <a href="publicar.php">Publicar</a>
             <a href="carrito.php">Carrito</a>
         </nav>
@@ -62,7 +62,7 @@ $stmt->close();
         <h2>Resumen del pedido</h2>
         <div class="body">
             <?php if (count($items) === 0): ?>
-                <p>Tu carrito está vacío. <a href="index.php">Seguir comprando</a></p>
+                <p>Tu carrito está vacío. <a href="inicio.php">Seguir comprando</a></p>
             <?php else: ?>
                 <table style="width:100%; border-collapse:collapse;">
                     <thead>
@@ -106,7 +106,7 @@ $stmt->close();
                     <?php echo csrf_input(); ?>
                     <button type="submit" class="btn" style="width:100%;">Confirmar pago</button>
                 </form>
-                <p style="margin-top:10px; text-align:center;"><a class="btn secondary" href="index.php">Seguir comprando</a></p>
+                <p style="margin-top:10px; text-align:center;"><a class="btn secondary" href="inicio.php">Seguir comprando</a></p>
             <?php endif; ?>
         </div>
     </div>

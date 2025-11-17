@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION['nombre'] = $usuario['nombre'];
             $_SESSION['correo'] = $usuario['correo'];
 
-            header("Location: ../index.php");
+            header("Location: ../inicio.php");
             exit();
         } else {
             http_response_code(401);

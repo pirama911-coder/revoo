@@ -63,7 +63,7 @@ $esPropio = ($usuario_id && (int)$usuario_id === (int)$art['usuario_id']);
         </div>
         <div class="logo">REVOO</div>
         <nav class="nav-links">
-            <a href="index.php">Inicio</a>
+            <a href="inicio.php">Inicio</a>
             <a href="publicar.php">Publicar</a>
             <a href="carrito.php">Carrito</a>
         </nav>

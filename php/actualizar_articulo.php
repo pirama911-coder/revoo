@@ -9,7 +9,7 @@ if (!isset($_SESSION['id'])) {
 }
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-    header('Location: ../index.php');
+    header('Location: ../inicio.php');
     exit;
 }
 
@@ -31,7 +31,7 @@ $art = $res->fetch_assoc();
 $stmt->close();
 
 if (!$art) {
-    header('Location: ../index.php?error=no_autorizado');
+    header('Location: ../inicio.php?error=no_autorizado');
     exit;
 }
 

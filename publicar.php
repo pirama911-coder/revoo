@@ -35,7 +35,7 @@ include 'php/csrf.php';
 
             <button type="submit" class="btn">Publicar</button>
         </form>
-        <p><a href="index.php">⬅ Volver al inicio</a></p>
+        <p><a href="inicio.php">⬅ Volver al inicio</a></p>
     </div>
 </body>
 </html>

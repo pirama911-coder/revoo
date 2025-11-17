@@ -49,7 +49,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->bind_param("issdsi", $usuario_id, $titulo, $descripcion, $precio, $nombre_imagen, $stock);
 
     if ($stmt->execute()) {
-        header("Location: ../index.php?publicacion=ok");
+        header("Location: ../inicio.php?publicacion=ok");
         exit();
     } else {
         http_response_code(400);

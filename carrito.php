@@ -39,7 +39,7 @@ $total = 0;
         </div>
         <div class="logo">REVOO</div>
         <nav class="nav-links">
-            <a href="index.php">Inicio</a>
+            <a href="inicio.php">Inicio</a>
             <a href="publicar.php">Publicar</a>
             <a href="carrito.php">Carrito</a>
         </nav>
@@ -62,7 +62,7 @@ $total = 0;
     <div class="resumen-carrito" style="display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; margin: 10px 0 14px; gap: 10px;">
         <div><strong><?php echo $cantidad_items; ?></strong> artículo(s) — <strong>Total:</strong> $<?php echo number_format($total, 2); ?></div>
         <div style="display:flex; gap:10px; align-items:center;">
-            <a class="btn secondary" href="index.php" title="Seguir comprando">Seguir comprando</a>
+            <a class="btn secondary" href="inicio.php" title="Seguir comprando">Seguir comprando</a>
             <a class="btn" href="pagar.php" title="Ir a pagar">Ir a pagar</a>
             <form action="php/vaciar_carrito.php" method="POST" style="display:inline;">
                 <?php echo csrf_input(); ?>
